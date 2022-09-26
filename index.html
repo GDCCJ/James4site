@@ -25,24 +25,23 @@ a:hover, a:active {
 	<h1 style="color: green">
 		James4
 	</h1>
-	
-	<b>
-		How to dynamically change a web
-		page’s title using JavaScript ?
-	</b>
-	
-	<p>
-		Click on the button to change the page
-		title to: "The title has changed!"
-	</p>
+
 	
 	<button onclick="changePageTitle()">
-		Change Page Title
+		Change Page Title to canvas
 	</button>
 	
+	<button onclick="changePageTitle2()">
+		Change Page Title to aleks
+	</button>
 	<script type="text/javascript">
 		function changePageTitle() {
 			newPageTitle = 'Canvas';
+			document.title = newPageTitle;
+		}
+		<script type="text/javascript">
+		function changePageTitle2() {
+			newPageTitle = 'Aleks | Dashboard';
 			document.title = newPageTitle;
 		}
 	</script>
